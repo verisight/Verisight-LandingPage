@@ -1,4 +1,4 @@
-// import { About } from "./components/About";
+import { Feature } from "./components/Feature";
 // import { Cta } from "./components/Cta";
 // import { FAQ } from "./components/FAQ";
 // import { Features } from "./components/Features";
@@ -21,8 +21,8 @@ function App() {
       <Navbar />
       <Hero />
       <DownloadChrome />
-      {/* <About />
-      <HowItWorks />
+      <Feature />
+      {/* <HowItWorks />
       <Features />
       <Services />
       <Cta />
