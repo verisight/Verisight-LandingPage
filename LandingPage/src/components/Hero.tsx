@@ -1,49 +1,40 @@
 // import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
 // import { HeroCards } from "./HeroCards";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+// import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import {Chrome} from 'lucide-react';
+
 
 export const Hero = () => {
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
+    <section className="flex justify-center items-center py-20 md:py-32 bg-gradient-to-r from-cyan-500 to-blue-500">
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
-          {/* <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Shadcn
-            </span>{" "}
-            landing page
+          <h1 className="text-center leading-normal">
+            Don't believe everything you read
           </h1>{" "}
-          for{" "}
-          <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
-            </span>{" "}
-            developers
-          </h2> */}
-          <h1 className="inline">
-            Don't believe everything you read{" "}
-          </h1>{" "}
-          <h2 className="inline space-y-2">
+          <h2 className="text-center">
             Verify it with AI
           </h2>
         </main>
 
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Navigating Online News with Clarity
-        </p>
+        <div className="text-center p-5">
+          <p className="text-xl">
+            Navigating Online News with Clarity
+          </p>
+        </div>
+        
 
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-
+        <div className="space-y-4 md:space-y-0 md:space-x-4 text-center">
           <a
-            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+            href="https://verisightlabs.com/"
             target="_blank"
             className={`w-full md:w-1/3 ${buttonVariants({
               variant: "outline",
             })}`}
           >
-            Github Repository
-            <GitHubLogoIcon className="ml-2 w-5 h-5" />
+            <Chrome className="w-5 h-5 mr-3" />
+            Install for Chrome
           </a>
         </div>
       </div>
@@ -55,7 +46,6 @@ export const Hero = () => {
 
       {/* Shadow effect */}
       {/* <div className="shadow"></div> */}
-      <img src=".assets/growth.png" alt="" />
     </section>
   );
 };
