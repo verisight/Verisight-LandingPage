@@ -70,35 +70,35 @@ export const DownloadChrome = () => {
     <section className="container py-10">
       <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
         <div>
-        <h2 className="text-3xl md:text-4xl font-bold">
-            Check wherever,
-            <br className="md:hidden" />
-          <span className="md:block">whenever</span>
-        </h2>
+          <h2 className="text-3xl md:text-4xl font-bold">
+              Check wherever,
+              <br className="md:hidden" />
+            <span className="md:block">whenever</span>
+          </h2>
 
-        <p className="text-xl mt-4 mb-8">
-          With our browser extension, online readers can assess the credibility of articles - on the go.
-        </p>
-
-        <div className="">
-          <p className="text-xl pb-5">
-            DOWNLOAD FOR CHROME
+          <p className="text-xl mt-4 mb-8">
+            With our browser extension, online readers can assess the credibility of articles - on the go.
           </p>
-        </div>
-        
 
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <a
-            href="https://verisightlabs.com/"
-            target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
-              variant: "outline",
-            })}`}
-          >
-            <Chrome className="w-5 h-5 mr-3" />
-            Install for Chrome
-          </a>
-        </div>
+          <div className="">
+            <p className="text-xl pb-5">
+              DOWNLOAD FOR CHROME
+            </p>
+          </div>
+          
+
+          <div className="space-y-4 md:space-y-0 md:space-x-4">
+            <a
+              href="https://verisightlabs.com/"
+              target="_blank"
+              className={`w-full md:w-1/3 ${buttonVariants({
+                variant: "outline",
+              })}`}
+            >
+              <Chrome className="w-5 h-5 mr-3" />
+              Install for Chrome
+            </a>
+          </div>
 
         </div>
 
