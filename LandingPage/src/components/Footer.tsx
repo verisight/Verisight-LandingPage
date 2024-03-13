@@ -1,4 +1,4 @@
-import { LogoIcon } from "./Icons";
+// import { LogoIcon } from "./Icons";
 
 export const Footer = () => {
   return (
@@ -11,8 +11,7 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon />
-            ShadcnUI/React
+            Verisight.
           </a>
         </div>
 
@@ -142,10 +141,10 @@ export const Footer = () => {
           &copy; 2024 Landing page made by{" "}
           <a
             target="_blank"
-            href="https://github.com/leoMirandaa"
+            href="https://verisightlabs.com/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            Verisight
           </a>
         </h3>
       </section>

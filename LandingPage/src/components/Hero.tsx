@@ -7,7 +7,7 @@ import {Chrome} from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <section className="flex justify-center items-center py-20 md:py-32 bg-gradient-to-r from-cyan-500 to-blue-500">
+    <section className="flex justify-center items-center py-20 md:py-32 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="text-center leading-normal">
