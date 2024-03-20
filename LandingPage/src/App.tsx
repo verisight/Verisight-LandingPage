@@ -11,7 +11,7 @@ import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 // import { Services } from "./components/Services";
 import { DownloadChrome } from "./components/DownloadChrome";
-// import { Team } from "./components/Team";
+import { Team } from "./components/Team";
 // import { Testimonials } from "./components/Testimonials";
 import "./App.css";
 
@@ -23,6 +23,7 @@ function App() {
       <DownloadChrome />
       <Feature />
       <SignupNow />
+      <Team />
       {/* <Features />
       <Services />
       <Cta />

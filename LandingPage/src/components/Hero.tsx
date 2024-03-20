@@ -3,11 +3,13 @@ import { buttonVariants } from "./ui/button";
 // import { HeroCards } from "./HeroCards";
 // import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import {Chrome} from 'lucide-react';
+import backgroundImage from '../assets/bg.png'; // Import the background image
 
 
 export const Hero = () => {
   return (
-    <section className="flex justify-center items-center py-20 md:py-32 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+    // <section className="flex justify-center items-center py-20 md:py-32 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+    <section className="flex justify-center items-center py-20 md:py-32 bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="text-center leading-normal">
@@ -29,7 +31,7 @@ export const Hero = () => {
           <a
             href="https://verisightlabs.com/"
             target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
+            className={`w-full md:w-1/4 ${buttonVariants({
               variant: "outline",
             })}`}
           >

@@ -7,7 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
+
+import JohnCena from '../assets/JohnCena.avif';
 
 interface TeamProps {
   imageUrl: string;
@@ -23,15 +25,23 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
+    imageUrl: JohnCena,
+    name: "John Cena",
     position: "Product Manager",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
+        name: "Instagram",
+        url: "https://www.instagram.com/",
       },
+    ],
+  },
+  {
+    imageUrl: JohnCena,
+    name: "John Cena",
+    position: "Product Manager",
+    socialNetworks: [
+      { name: "Linkedin", url: "http://linkedin.com" },
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
@@ -39,15 +49,11 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    imageUrl: JohnCena,
+    name: "John Cena",
+    position: "Product Manager",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
@@ -55,12 +61,11 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    imageUrl: JohnCena,
+    name: "John Cena",
+    position: "Product Manager",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
-
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
@@ -68,14 +73,14 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
+    imageUrl: JohnCena,
+    name: "John Cena",
+    position: "Product Manager",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
+        name: "Instagram",
+        url: "https://www.instagram.com/",
       },
     ],
   },
@@ -87,21 +92,16 @@ export const Team = () => {
       case "Linkedin":
         return <Linkedin size="20" />;
 
-      case "Facebook":
-        return <Facebook size="20" />;
-
       case "Instagram":
         return <Instagram size="20" />;
     }
   };
 
   return (
-    <section
-      id="team"
-      className="container py-24 sm:py-32"
-    >
+    <section id="team" className="container py-24 sm:py-20 flex flex-col items-center justify-center">
       <h2 className="text-3xl md:text-4xl font-bold">
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+        {/* <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text"> */}
+        <span className="text-[#1D7D81]">
           Our Dedicated{" "}
         </span>
         Crew
@@ -112,7 +112,7 @@ export const Team = () => {
         dolor pariatur sit!
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 gap-y-10">
         {teamList.map(
           ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
             <Card
@@ -126,7 +126,7 @@ export const Team = () => {
                   className="absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover"
                 />
                 <CardTitle className="text-center">{name}</CardTitle>
-                <CardDescription className="text-primary">
+                <CardDescription className="text-primary font-semibold">
                   {position}
                 </CardDescription>
               </CardHeader>

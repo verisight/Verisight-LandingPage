@@ -105,7 +105,7 @@ export const DownloadChrome = () => {
         <img
           src={laptop}
           className="w-[300px] md:w-[500px] lg:w-[400px] object-contain"
-          alt="About services"
+          alt="Laptop"
         />
       </div>
     </section>
