@@ -15,6 +15,7 @@ interface TeamProps {
   imageUrl: string;
   name: string;
   position: string;
+  description: string;
   socialNetworks: SociaNetworkslProps[];
 }
 
@@ -28,6 +29,7 @@ const teamList: TeamProps[] = [
     imageUrl: JohnCena,
     name: "John Cena",
     position: "Product Manager",
+    description: "You can't see me",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -40,6 +42,7 @@ const teamList: TeamProps[] = [
     imageUrl: JohnCena,
     name: "John Cena",
     position: "Product Manager",
+    description: "You can't see me",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -52,6 +55,7 @@ const teamList: TeamProps[] = [
     imageUrl: JohnCena,
     name: "John Cena",
     position: "Product Manager",
+    description: "You can't see me",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -64,6 +68,7 @@ const teamList: TeamProps[] = [
     imageUrl: JohnCena,
     name: "John Cena",
     position: "Product Manager",
+    description: "You can't see me",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -76,6 +81,7 @@ const teamList: TeamProps[] = [
     imageUrl: JohnCena,
     name: "John Cena",
     position: "Product Manager",
+    description: "You can't see me",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -107,17 +113,17 @@ export const Team = () => {
         Crew
       </h2>
 
-      <p className="mt-4 mb-10 text-xl text-muted-foreground">
+      {/* <p className="mt-4 mb-10 text-xl text-muted-foreground">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
         dolor pariatur sit!
-      </p>
+      </p> */}
 
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({ imageUrl, name, position, description, socialNetworks }: TeamProps) => (
             <Card
               key={name}
-              className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
+              className="bg-muted/50 relative mt-16 flex flex-col justify-center items-center"
             >
               <CardHeader className="mt-8 flex justify-center items-center pb-2">
                 <img
@@ -132,7 +138,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>{description}</p>
               </CardContent>
 
               <CardFooter>

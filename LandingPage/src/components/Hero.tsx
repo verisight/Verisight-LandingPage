@@ -13,7 +13,7 @@ export const Hero = () => {
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="text-center leading-normal">
-            Don't believe everything you read
+            Don't believe everything you read.
           </h1>{" "}
           <h2 className="text-center">
             Verify it with AI
@@ -21,7 +21,7 @@ export const Hero = () => {
         </main>
 
         <div className="text-center p-5">
-          <p className="text-xl">
+          <p className="text-xl font-semibold">
             Navigating Online News with Clarity
           </p>
         </div>
