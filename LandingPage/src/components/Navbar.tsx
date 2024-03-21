@@ -17,6 +17,7 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 // import { ModeToggle } from "./mode-toggle";
 // import { LogoIcon } from "./Icons";
+import logo from '../assets/WhiteLogo.png';
 
 interface RouteProps {
   href: string;
@@ -45,11 +46,14 @@ const routeList: RouteProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="top-0 z-40 w-full bg-transparent">
+    <header className="top-0 z-40 w-full bg-h- bg-background/75 fixed">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
-          <NavigationMenuItem className="font-bold flex">
-            <a href="/" className="ml-2 font-bold text-xl flex">Verisight.</a>
+          <NavigationMenuItem className="font-bold">
+            <a href="/" className="ml-2 font-bold text-xl flex items-center">
+              <img src={logo} alt="Verisight Logo" className="h-10 w-10 mr-2" />
+              Verisight
+            </a>
           </NavigationMenuItem>
 
           {/* mobile */}
