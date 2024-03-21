@@ -14,10 +14,12 @@ import { DownloadChrome } from "./components/DownloadChrome";
 import { Team } from "./components/Team";
 // import { Testimonials } from "./components/Testimonials";
 import "./App.css";
+// import { Loader } from "./components/Loader";
 
 function App() {
   return (
     <>
+      {/* <Loader/> */}
       <Navbar />
       <Hero />
       <DownloadChrome />

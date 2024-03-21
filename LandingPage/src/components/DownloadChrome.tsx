@@ -67,8 +67,8 @@ import {Chrome} from 'lucide-react';
 
 export const DownloadChrome = () => {
   return (
-    <section className="container py-10">
-      <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
+    <section className="py-10 bg-[#181818]">
+      <div className="container grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
               Check wherever,
