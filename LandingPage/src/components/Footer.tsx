@@ -1,4 +1,5 @@
 // import { LogoIcon } from "./Icons";
+import PrivacyPolicy from '../pages/PrivacyPolicy';
 
 export const Footer = () => {
   return (
@@ -17,21 +18,31 @@ export const Footer = () => {
 
         <div className="flex flex-col gap-2">
           <a
-              href="#team"
-              className="opacity-100 hover:opacity-60 font-bold text-lg"
-            >
-              How it works?
+            href="#team"
+            className="opacity-100 hover:opacity-60 font-bold text-lg"
+          >
+            How it works?
           </a>
 
         </div>
 
         <div className="flex flex-col gap-2">
           <a
-              href="#team"
-              className="opacity-100 hover:opacity-60 font-bold text-lg"
-            >
-              About Us
+            href="#team"
+            className="opacity-100 hover:opacity-60 font-bold text-lg"
+          >
+            About Us
           </a>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <a
+            href="../pages/PrivacyPolicy.tsx"
+            className="opacity-100 hover:opacity-60 font-bold text-lg"
+          >
+            Privacy Policy
+          </a>
+
         </div>
 
         <div className="flex flex-col gap-2">
