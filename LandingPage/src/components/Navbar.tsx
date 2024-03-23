@@ -17,7 +17,7 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 // import { ModeToggle } from "./mode-toggle";
 // import { LogoIcon } from "./Icons";
-import logo from '../assets/WhiteLogo.png';
+import logo from "../assets/WhiteLogo.png";
 
 interface RouteProps {
   href: string;
@@ -32,10 +32,6 @@ const routeList: RouteProps[] = [
   {
     href: "#team",
     label: "Team",
-  },
-  {
-    href: "#pricing",
-    label: "Pricing",
   },
   {
     href: "#faq",
@@ -60,10 +56,7 @@ export const Navbar = () => {
           <span className="flex md:hidden">
             {/* <ModeToggle /> */}
 
-            <Sheet
-              open={isOpen}
-              onOpenChange={setIsOpen}
-            >
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger className="px-2">
                 <Menu
                   className="flex md:hidden h-5 w-5"
