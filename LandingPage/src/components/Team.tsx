@@ -7,9 +7,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin, Github } from "lucide-react";
 
-import JohnCena from '../assets/JohnCena.avif';
+import Pragash from '../assets/Pragesh.jpg';
+import Aashif from '../assets/Aashif.jpg';
+import Ishma from '../assets/Ishma.jpg';
+import Santosh from '../assets/Santosh.jpeg';
+import Tharoosh from '../assets/Tharoosh.jpg';
+
 
 interface TeamProps {
   imageUrl: string;
@@ -26,67 +31,88 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: JohnCena,
-    name: "John Cena",
-    position: "Product Manager",
+    imageUrl: Pragash,
+    name: "Pragash Sasitharan",
+    position: "Team Leader",
     description: "You can't see me",
     socialNetworks: [
-      { name: "Linkedin", url: "http://linkedin.com" },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/pragash-sasitharan/" },
       {
         name: "Instagram",
+        url: "https://www.instagram.com/pragash_.s/",
+      },
+      {
+        name: "Github",
         url: "https://www.instagram.com/",
       },
     ],
   },
+
   {
-    imageUrl: JohnCena,
-    name: "John Cena",
-    position: "Product Manager",
+    imageUrl: Aashif,
+    name: "Mohamed Aashif",
+    position: "Machine Learning Developer",
     description: "You can't see me",
     socialNetworks: [
-      { name: "Linkedin", url: "http://linkedin.com" },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/mohamed-aashif/" },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/im.aashif/ ",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/aashif-m ",
       },
     ],
   },
   {
-    imageUrl: JohnCena,
-    name: "John Cena",
-    position: "Product Manager",
+    imageUrl: Tharoosh,
+    name: "Sudesh Tharoosh",
+    position: "Web Developer",
     description: "You can't see me",
     socialNetworks: [
-      { name: "Linkedin", url: "http://linkedin.com" },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/sudeshtharoosh/" },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/sudesh_tharoosh?igsh=MWZyZXBiNTZmNDQ1Mw==",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/SudeshTharoosh",
       },
     ],
   },
   {
-    imageUrl: JohnCena,
-    name: "John Cena",
-    position: "Product Manager",
+    imageUrl: Ishma,
+    name: "Mohamed Ishma",
+    position: "Machince Leaning Developer",
     description: "You can't see me",
     socialNetworks: [
-      { name: "Linkedin", url: "http://linkedin.com" },
+      { name: "Linkedin", url: "www.linkedin.com/in/ishma-ifan-179428228" },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/ishmaifan/",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/ishmaifan",
       },
     ],
   },
   {
-    imageUrl: JohnCena,
-    name: "John Cena",
-    position: "Product Manager",
+    imageUrl: Santosh,
+    name: "Santosh Manoharadas",
+    position: "Web Developer",
     description: "You can't see me",
     socialNetworks: [
-      { name: "Linkedin", url: "http://linkedin.com" },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/santosh-manoharadas/" },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/santosh.manoharadas/",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/MS1145",
       },
     ],
   },
@@ -100,6 +126,9 @@ export const Team = () => {
 
       case "Instagram":
         return <Instagram size="20" />;
+
+      case "Github":
+        return <Github size="20" />;
     }
   };
 
