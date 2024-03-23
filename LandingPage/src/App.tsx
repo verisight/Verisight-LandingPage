@@ -1,42 +1,16 @@
-import { Feature } from "./components/Feature";
-// import { Cta } from "./components/Cta";
-// import { FAQ } from "./components/FAQ";
-// import { Features } from "./components/Features";
-import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
-import { SignupNow } from "./components/SignupNow";
-import { Navbar } from "./components/Navbar";
-// import { Newsletter } from "./components/Newsletter";
-// import { Pricing } from "./components/Pricing";
-import { ScrollToTop } from "./components/ScrollToTop";
-// import { Services } from "./components/Services";
-import { DownloadChrome } from "./components/DownloadChrome";
-import { Team } from "./components/Team";
-// import { Testimonials } from "./components/Testimonials";
 import "./App.css";
-// import { Loader } from "./components/Loader";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
-    <>
-      {/* <Loader/> */}
-      <Navbar />
-      <Hero />
-      <DownloadChrome />
-      <Feature />
-      <SignupNow />
-      <Team />
-      {/* <Features />
-      <Services />
-      <Cta />
-      <Testimonials />
-      <Team />
-      <Pricing />
-      <Newsletter />
-      <FAQ /> */}
-      <Footer />
-      <ScrollToTop />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
