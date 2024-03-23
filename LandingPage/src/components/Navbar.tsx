@@ -17,7 +17,7 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 // import { ModeToggle } from "./mode-toggle";
 // import { LogoIcon } from "./Icons";
-import logo from "../assets/WhiteLogo.png";
+// import logo from "../assets/WhiteLogo.png";
 
 interface RouteProps {
   href: string;
@@ -42,13 +42,13 @@ const routeList: RouteProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="top-0 z-40 w-full bg-h- bg-background/75 fixed">
+    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
-          <NavigationMenuItem className="font-bold">
-            <a href="/" className="ml-2 font-bold text-xl flex items-center">
-              <img src={logo} alt="Verisight Logo" className="h-10 w-10 mr-2" />
-              Verisight
+          <NavigationMenuItem className="font-bold flex">
+            <a href="/" className="ml-2 font-bold text-xl flex">
+              {/* <img src={logo} alt="Verisight Logo" className="h-10 w-10 mr-2" /> */}
+              Verisight.
             </a>
           </NavigationMenuItem>
 
@@ -90,7 +90,7 @@ export const Navbar = () => {
 
           {/* desktop */}
           {/* <nav className="hidden md:flex gap-2"> */}
-          <nav className="flex-grow flex justify-center md:justify-center gap-2">
+          <nav className="hidden flex-grow flex justify-center md:justify-center gap-2">
             {routeList.map((route: RouteProps, i) => (
               <a
                 href={route.href}
