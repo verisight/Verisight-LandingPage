@@ -1,5 +1,4 @@
 // import { LogoIcon } from "./Icons";
-import PrivacyPolicy from '../pages/PrivacyPolicy';
 
 export const Footer = () => {
   return (
