@@ -36,7 +36,7 @@ export const Footer = () => {
 
         <div className="flex flex-col gap-2">
           <a
-            href="../pages/PrivacyPolicy.tsx"
+            href='https://verisightlabs.com/privacy'
             className="opacity-100 hover:opacity-60 font-bold text-lg"
           >
             Privacy Policy
