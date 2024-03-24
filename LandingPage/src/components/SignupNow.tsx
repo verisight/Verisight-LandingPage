@@ -102,7 +102,7 @@ export const SignupNow = () => {
               <a
                 href="https://verisightlabs.com/"
                 target="_blank"
-                className={`w-full md:w-1/3 ${buttonVariants({
+                className={`w-full md:w-1/3 bg-white text-black ${buttonVariants({
                   variant: "outline",
                 })}`}
               >

@@ -98,7 +98,7 @@ export const Feature = () => {
         <a
           href="https://verisightlabs.com/"
           target="_blank"
-          className={`w-full md:w-1/4 ${buttonVariants({
+          className={`w-full md:w-1/5 bg-white text-black ${buttonVariants({
             variant: "outline",
           })}`}
         >
