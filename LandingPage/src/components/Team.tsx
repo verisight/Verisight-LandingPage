@@ -43,7 +43,7 @@ const teamList: TeamProps[] = [
       },
       {
         name: "Github",
-        url: "https://www.instagram.com/",
+        url: "https://github.com/PPT1001",
       },
     ],
   },

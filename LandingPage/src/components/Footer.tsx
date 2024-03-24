@@ -53,8 +53,8 @@ export const Footer = () => {
         <h3>
           &copy; 2024 VerisightLabs. All Rights Reserved.{" "}
           <a
-            target="_blank"
-            href="https://verisightlabs.com/"
+            // target="_blank"
+            href="/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
             Verisight

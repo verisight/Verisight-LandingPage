@@ -6,6 +6,7 @@ import { Navbar } from "@/components/Navbar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SignupNow } from "@/components/SignupNow";
 import { Team } from "@/components/Team";
+import { FAQ } from "@/components/FAQ";
 import "../App.css";
 
 const LandingPage = () => {
@@ -26,6 +27,7 @@ const LandingPage = () => {
       <Pricing />
       <Newsletter />
       <FAQ /> */}
+      <FAQ />
       <Footer />
       <ScrollToTop />
     </>
