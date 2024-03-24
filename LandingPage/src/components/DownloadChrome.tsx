@@ -62,7 +62,8 @@
 
 import laptop from "../assets/laptop.png";
 import { buttonVariants } from "./ui/button";
-import {Chrome} from 'lucide-react';
+// import {Chrome} from 'lucide-react';
+import chromeLogo from '../assets/chrome.png'
 
 
 export const DownloadChrome = () => {
@@ -91,11 +92,12 @@ export const DownloadChrome = () => {
             <a
               href="https://verisightlabs.com/"
               target="_blank"
-              className={`w-full md:w-1/3 ${buttonVariants({
+              className={`w-full md:w-1/3 bg-white text-black ${buttonVariants({
                 variant: "outline",
               })}`}
             >
-              <Chrome className="w-5 h-5 mr-3" />
+              {/* <Chrome className="w-5 h-5 mr-3" /> */}
+              <img src={chromeLogo} className="w-5 h-5 mr-3" alt="Chrome Logo" />
               Install for Chrome
             </a>
           </div>
