@@ -100,7 +100,7 @@ export const SignupNow = () => {
 
             <div className="space-y-4 md:space-y-0 md:space-x-4">
               <a
-                href="https://verisightlabs.com/"
+                href="https://auth.verisightlabs.com/signup"
                 target="_blank"
                 className={`w-full md:w-1/3 bg-white text-black ${buttonVariants({
                   variant: "outline",

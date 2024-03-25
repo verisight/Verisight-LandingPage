@@ -29,7 +29,7 @@ export const Hero = () => {
 
         <div className="space-y-4 md:space-y-0 md:space-x-4 text-center">
           <a
-            href="https://verisightlabs.com/"
+            href="https://chromewebstore.google.com/detail/verisight/hakkkgoancaobbmlmngfclkdggkdnolk"
             target="_blank"
             className={`w-full md:w-1/4 bg-white text-black ${buttonVariants({
               variant: "outline",
