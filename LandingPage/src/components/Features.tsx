@@ -11,6 +11,7 @@ import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
 
 interface FeatureProps {
+  icon?: string;
   title: string;
   description: string;
   image: string;
@@ -18,12 +19,14 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    icon: "📰",
+    title: "Headline Stance Detection",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Headline Stance Detection is a feature of Verisight that categorizes article headlines into Agree, Disagree, or Unrelated. This helps users understand the perspective or bias of the article at a glance, allowing for more informed and critical reading.",
     image: image4,
   },
   {
+    icon: "🔍",
     title: "Intuitive user interface",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
@@ -51,10 +54,7 @@ const featureList: string[] = [
 
 export const Features = () => {
   return (
-    <section
-      id="features"
-      className="container py-24 sm:py-32 space-y-8"
-    >
+    <section id="features" className="container py-15 sm:py-32 space-y-8">
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
         Many{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
@@ -65,10 +65,7 @@ export const Features = () => {
       <div className="flex flex-wrap md:justify-center gap-4">
         {featureList.map((feature: string) => (
           <div key={feature}>
-            <Badge
-              variant="secondary"
-              className="text-sm"
-            >
+            <Badge variant="secondary" className="text-sm">
               {feature}
             </Badge>
           </div>
@@ -76,7 +73,7 @@ export const Features = () => {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {features.map(({ title, description, image }: FeatureProps) => (
+        {features.map(({ icon, title, description, image }: FeatureProps) => (
           <Card key={title}>
             <CardHeader>
               <CardTitle>{title}</CardTitle>
