@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { ArrowUpToLine } from "lucide-react";
+import { ArrowUpToLine, ChevronUp } from "lucide-react";
 
 export const ScrollToTop = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -27,11 +27,11 @@ export const ScrollToTop = () => {
       {showTopBtn && (
         <Button
           onClick={goToTop}
-          className="fixed bottom-4 right-4 opacity-90 shadow-md"
+          className="fixed bottom-4 right-4 opacity-90 shadow-md rounded-full"
           size="icon"
           style={{ backgroundColor: "#1D7D81" }}
         >
-          <ArrowUpToLine className="h-4 w-4" />
+          <ChevronUp className="h-4 w-4" />
         </Button>
       )}
     </>

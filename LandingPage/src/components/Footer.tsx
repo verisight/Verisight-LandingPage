@@ -2,11 +2,11 @@
 
 export const Footer = () => {
   return (
-    <footer id="footer">
+    <footer id="footer" className="space-y-8">
       <hr className="w-11/12 mx-auto" />
 
-      <section className="container py-10 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
-        <div className="col-span-full xl:col-span-2">
+      <section className="container flex flex-col w-max space-y-4">
+        <div className=" place-self-center">
           <a
             href="/"
             className="font-bold text-xl flex"
@@ -15,7 +15,7 @@ export const Footer = () => {
           </a>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="justify-between space-x-48">
           <a
             href="#team"
             className="opacity-100 hover:opacity-60 font-bold text-lg"
@@ -23,18 +23,13 @@ export const Footer = () => {
             How it works?
           </a>
 
-        </div>
-
-        <div className="flex flex-col gap-2">
           <a
             href="#team"
             className="opacity-100 hover:opacity-60 font-bold text-lg"
           >
             About Us
           </a>
-        </div>
 
-        <div className="flex flex-col gap-2">
           <a
             href='https://verisightlabs.com/privacy'
             className="opacity-100 hover:opacity-60 font-bold text-lg"
@@ -42,10 +37,13 @@ export const Footer = () => {
             Privacy Policy
           </a>
 
-        </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">API</h3>
+          <a
+            href=''
+            className="opacity-100 hover:opacity-60 font-bold text-lg"
+          >
+            API
+          </a>
         </div>
       </section>
 

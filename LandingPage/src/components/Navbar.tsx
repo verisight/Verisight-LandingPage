@@ -39,11 +39,11 @@ const routeList: RouteProps[] = [
   },
 ];
 
-export const Navbar = () => {
+export const Navbar = ({className}: {className?: string} = {}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
-      <NavigationMenu className="mx-auto">
+    <header className={className}>
+      <NavigationMenu className="absolute w-full mt-2"  >
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
             <a href="/" className="ml-2 font-bold text-xl flex">
@@ -90,7 +90,7 @@ export const Navbar = () => {
 
           {/* desktop */}
           {/* <nav className="hidden md:flex gap-2"> */}
-          <nav className="flex-grow flex justify-center md:justify-center gap-2 hidden md:flex ">
+          <nav className="flex justify-center ">
             {routeList.map((route: RouteProps, i) => (
               <a
                 href={route.href}

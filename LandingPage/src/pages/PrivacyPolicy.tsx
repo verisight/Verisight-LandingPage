@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 const PrivacyPolicy = () => {
   return (
     <div className="bg-white flex flex-col">
-      <Navbar />
+      <Navbar className=" text-black  " />
       <div className="flex-grow flex justify-center items-center">
         <div className="max-w-4xl w-full px-6">
           <div className="mt-20 text-black py-10 space-y-6">
@@ -548,7 +548,7 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
         </div>
-      </div> 
+      </div>
       <div className="bg-black">
         <Footer />
       </div>
