@@ -30,7 +30,7 @@ const features: FeatureProps[] = [
   },
   {
     icon: "🔍",
-    title: "Article Summarization",
+    title: "Article Summarization for Ease",
     description:
       "Verisight can generate concise summaries of articles using OpenAI's GPT-3.5 model. Users can input the article content, and the system will provide a summarized version of the article, making it easier to understand the main points and key information.",
     image: image3,
@@ -40,6 +40,13 @@ const features: FeatureProps[] = [
     title: "Cross-checking of Information",
     description:
       "Verisight uses advanced AI algorithms to cross-check the information within articles for inconsistencies or discrepancies. This helps users identify any misleading or false information presented in the articles, ensuring the accuracy and reliability of the content.",
+    image: image,
+  },
+  {
+    icon: "🔍",
+    title: "User Notes for Additional Context",
+    description:
+      "Users can add and manage personal notes corresponding to article links. This feature allows users to keep track of important information, make annotations, and store additional context or insights related to the articles they analyze.",
     image: image,
   },
 ];
@@ -76,13 +83,14 @@ export const Feature = () => {
           </Card>
         ))}
       </div> */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
         {features.map(({ title, description }: FeatureProps) => (
           <Card key={title} className="w-full md:w-64 lg:w-80 h-80">
             <CardHeader>
-              <CardTitle>{title}</CardTitle>
+              <CardTitle className="mb-4 text-center">{title}</CardTitle>
+              <div className="border-b-2 border-gray-200 w-1/2 mx-auto my-2"></div>
             </CardHeader>
-            <CardContent>{description}</CardContent>
+            <CardContent className="text-sm">{description}</CardContent>
             {/* <CardFooter>
               <img
                 src={image}
@@ -102,11 +110,13 @@ export const Feature = () => {
         <a
           href="https://chromewebstore.google.com/detail/verisight/hakkkgoancaobbmlmngfclkdggkdnolk"
           target="_blank"
-          className={`w-full md:w-1/5 bg-white text-black ${buttonVariants({
-            variant: "outline",
-          })}`}
+          className={`w-full md:w-1/5 gap-2 font-bold bg-white text-black ${buttonVariants(
+            {
+              variant: "outline",
+            }
+          )}`}
         >
-          <Chrome className="w-5 h-5 mr-3" />
+          <Chrome className="w-5 h-5" />
           Install for Chrome
         </a>
       </div>
