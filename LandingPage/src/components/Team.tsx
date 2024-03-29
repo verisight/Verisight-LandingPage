@@ -134,18 +134,38 @@ export const Team = () => {
 
   return (
     <section id="team" className="container py-24 sm:py-20 flex flex-col items-center justify-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-10">
-        {/* <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text"> */}
+      <h2 className="text-3xl md:text-4xl font-bold">
         <span className="text-[#1D7D81]">
-          Our Dedicated{" "}
+          Supervised By
         </span>
-        Crew
       </h2>
+      <Card className="bg-muted/50 relative mt-5 mb-8 flex flex-col justify-center items-center">
+        <CardHeader className="mt-8 flex justify-center items-center pb-2">
+          <CardTitle>Sahan Priyanayana</CardTitle>
+        </CardHeader>
+        <CardContent className="text-primary font-semibold">
+          <p>Lecturer</p>
+        </CardContent>
+        <CardFooter>
+          <a
+            href="https://www.linkedin.com/in/sahan-kodikara-33892697/"
+            target="_blank"
+            className={buttonVariants({
+              variant: "ghost",
+              size: "sm",
+            })}
+          >
+            <span className="sr-only">Linkedin icon</span>
+            <Linkedin size="20" />
+          </a>
+        </CardFooter>
+      </Card>
 
-      {/* <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
-      </p> */}
+      <h2 className="text-3xl md:text-4xl font-bold mb-10">
+        <span className="text-[#1D7D81]">
+          Our Dedicated Crew
+        </span>
+      </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 gap-y-10">
         {teamList.map(
