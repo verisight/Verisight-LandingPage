@@ -82,7 +82,7 @@ export const DownloadChrome = () => {
             <p className="text-sm pb-2">DOWNLOAD FOR CHROME</p>
           </div>
 
-          <div className="space-y-4 w-[525px] md:space-y-0 md:space-x-4">
+          <div className="space-y-4 w-[525px] md:space-y-0 md:space-x-4 hidden">
             <a
               href="https://chromewebstore.google.com/detail/verisight/hakkkgoancaobbmlmngfclkdggkdnolk"
               target="_blank"

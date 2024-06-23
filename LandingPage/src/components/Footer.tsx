@@ -2,7 +2,7 @@
 
 export const Footer = () => {
   return (
-    <footer id="footer" className="space-y-8">
+    <footer id="footer" className="space-y-8 hidden lg:visible">
       <hr className="w-11/12 mx-auto" />
 
       <section className="container flex flex-col w-max space-y-4">
